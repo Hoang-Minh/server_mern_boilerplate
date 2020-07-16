@@ -1,0 +1,32 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGNkNWI3NTU2Y2JlNTQxOGMwY2NkMiIsImlhdCI6MTU5NDY3NjY2MywiZXhwIjoxNTk0Njc3NTYzfQ.oouyaI8w9a46IgcV3gC5XXNqrKGGtfCYOW7Ri5Tg6xk
+
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "username": "nguyen",
+    "email": "nguyen@yahoo.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:5000/api/current_user
+Content-Type: application/json
+
+{
+    
+    "username": "minh",
+    "password": "minh123"
+}
+
+###
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGNlNDI3ZTUxMGZiMzg0NGMwMjEzMSIsImlhdCI6MTU5NDY4MDM1OSwiZXhwIjoxNTk0NjgxMjU5fQ.0nVDjLPiIYrQXLBJwXZAHnHeph501QSizEbM0x_Ey-8
+
+###
+GET http://localhost:5000
+
+###
+GET http://localhost:5000/api/current_user/logout
